@@ -64,7 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'display_lhr_rwp.html', 
         'display_lhr_nwl.html', 
         'display_lhr_mianwali.html', 
-        'display_lhr_qta.html'
+        'display_lhr_qta.html',
+        'image_display.html'
     ];
     const currentPageFileName = window.location.pathname.split('/').pop(); 
     const currentIndexInSequence = pageSequence.indexOf(currentPageFileName);
@@ -75,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         setTimeout(() => {
             window.location.href = nextPageFileName;
-        }, 30000); 
+        }, 20000);
     }
 
     // --- Date/Time Display Logic ---

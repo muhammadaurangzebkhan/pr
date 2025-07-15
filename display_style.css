@@ -10,6 +10,25 @@ body {
     line-height: 1.6;
     background-color: #000000; /* Shine Black Background */
     padding-bottom: 60px; /* Add padding to the bottom of the body to make space for the footer */
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
 
 h1 { /* General H1 for the page title, not inside a theme */
@@ -74,6 +93,14 @@ h1 { /* General H1 for the page title, not inside a theme */
     align-items: center;
 }
 
+.en-text {
+    text-align: left;
+}
+
+.ur-text {
+    text-align: right;
+}
+
 .route-section h2 .arrow { 
     font-size: 0.8em; 
     margin: 0 10px; 
@@ -98,6 +125,8 @@ th, td {
     vertical-align: middle;
     border-bottom-width: 2px;
     border-bottom-style: solid;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 thead th {
