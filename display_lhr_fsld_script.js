@@ -39,6 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const statusCell = row.insertCell();
             statusCell.textContent = item.status;
             statusCell.classList.add('animated-status');
+
+            if (item.status === 'Departed' || item.status === 'Arrived' || item.status === 'Cancelled') {
+                row.classList.add('status-changed');
+            }
             
             row.insertCell().textContent = item.platformNo;
 

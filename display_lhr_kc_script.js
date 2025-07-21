@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
             statusCell.textContent = item.status;
             statusCell.classList.add('animated-status'); // This class will be combined with .departures-theme or .arrivals-theme by CSS
 
+            if (item.status === 'Departed' || item.status === 'Arrived' || item.status === 'Cancelled') {
+                row.classList.add('status-changed');
+            }
+
             row.insertCell().textContent = item.platformNo;
 
             // Removed Actions Cell and Buttons

@@ -2,7 +2,7 @@ html, body {
     height: 100%; /* Ensure body can fill the viewport height */
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 20px;
     color: #f0f0f0; /* Light text for dark themes */
@@ -187,6 +187,28 @@ tbody tr:last-child td {
 .arrivals-theme .edit-btn:hover { background-color: #99ccdd; transform: translateY(-1px); }
 .arrivals-theme .remove-btn { background-color: #ff7777; color: #330000; } 
 .arrivals-theme .remove-btn:hover { background-color: #ff5555; transform: translateY(-1px); }
+
+.status-changed {
+    color: red !important;
+}
+
+.welcome-message {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+    animation: eld-glow 1.5s infinite alternate;
+}
+
+@keyframes eld-glow {
+    from {
+        text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+    }
+    to {
+        text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+    }
+}
 
 /* Footer Styling */
 .footer {
